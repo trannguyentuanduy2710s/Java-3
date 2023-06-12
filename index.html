@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BaiTapJS3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+    <div class="bai3">
+        <div class="card w-50">
+            <div class="card-header bg-dark text-white">
+                <h3 class="text-center">BT3: LUYỆN TẬP HÀM</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <input class="form-control" type="number" id="themSo" placeholder="NHẬP SỐ N">
+                    <button id="btnSubmit" class="btn btn-success">THÊM SỐ</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="txtKetQua"></span> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnTotal" class="btn btn-success">Tính tổng số dương</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="txttinhTong"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btndemSoduong" class="btn btn-success">Đếm số dương</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="txtDemsoduong"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnMinnumber" class="btn btn-success">Tìm số nhỏ nhất</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="txtsoNhonhat"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnSoduongnhonhat" class="btn btn-success">Tìm số dương nhỏ nhất</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="txtsoDuongnhonhat"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnTimsochan" class="btn btn-success">Tìm số chẵn cuối cùng</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="txtsoChancuoicung"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnDoicho" class="btn btn-success">Đổi chỗ</button>
+                    <input class="form-number" type="number" id="numBer1" placeholder="NHẬP SỐ VỊ TRÍ 1">
+                    <input class="form-number" type="number" id="numBer2" placeholder="NHẬP SỐ VỊ TRÍ 2">
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="Doichoresult"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnSapxep" class="btn btn-success">Sắp xếp tăng dần</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="Sapxepresult"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnSNT" class="btn btn-success">Tìm số nguyên tố đầu tiên </button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="Sntresult"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnCountInt" class="btn btn-success">Đếm số nguyên</button>
+                    <input class="form-number" type="number" id="countNumber" placeholder="NHẬP SỐ NGUYÊN TỐ">
+                    <button id="btnNumberInteger" class="btn btn-success">Thêm số nguyên</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="demSonguyen"></span> 
+                    </div>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="numberIntegerDisplay"></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-gruop">
+                    <button id="btnCompare" class="btn btn-success">So sánh số lượng âm và dương</button>
+                    <div class="card-footer text-center">
+                        <i class="fa fa-hand-point-right"></i><span id="compareResult"></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

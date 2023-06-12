@@ -1,0 +1,16 @@
+.bai1, .bai2, .bai3, .bai4, .bai5 {
+    display: flex;
+    margin-bottom: 100px;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.form-gruop ul li {
+    list-style: none;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.card-body, .form-gruop, .form-number{
+    display: inline;
+}
